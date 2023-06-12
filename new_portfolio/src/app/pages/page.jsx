@@ -1,7 +1,7 @@
 import styles from "../page.module.css";
 import Navbar from "../components/Navbar";
 import MainHero from "../components/MainHero";
-import SubHero from "../components/SubHero";
+import SubHero from "./projects/page";
 import Footer from "../components/Footer";
 
 export default function page({}) {

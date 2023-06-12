@@ -51,6 +51,7 @@
 
 .stars {
 	position: absolute;
+	background: white;
 	top: 100px;
 	right: 100px;
 	border-radius: 60px;

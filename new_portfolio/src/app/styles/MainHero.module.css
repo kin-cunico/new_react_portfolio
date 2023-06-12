@@ -1,18 +1,22 @@
 .main {
 	margin: 0;
-	padding: 0;
+	padding: 40px 20px;
 	box-sizing: content-box;
 	width: 100%;
 	height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
 	align-items: center;
+	font-family: "Press Start 2P", cursive;
 }
 
 .heroImg {
 	display: flex;
-	align-items: right;
+	align-items: bottom;
 	justify-content: end;
+	top: 100px;
+	border: 4px solid whitesmoke;
+	border-radius: 250px;
 }
 
 .heroText {
@@ -21,6 +25,16 @@
 	padding: 10px 10px;
 	gap: 20px;
 	text-align: center;
+	justify-content: space-evenly;
+	left: -100px;
+}
+
+.heroText h1 {
+	color: #00bfff;
+}
+
+.heroText span {
+	color: orangered;
 }
 
 .IconList {
@@ -28,4 +42,51 @@
 	justify-content: space-around;
 	align-items: center;
 	padding: 20px 20px;
+}
+
+.Icon {
+	color: #00bfff;
+	width: 60px;
+	height: 60px;
+	cursor: pointer;
+}
+
+.backgroundImg {
+	display: flex;
+	height: 100%;
+	width: inherit;
+}
+
+.tech_cont {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 10px 10px 10px;
+}
+
+.techs {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 10px;
+	padding: 30px 10px;
+}
+
+.js {
+	color: yellow;
+}
+
+.ts {
+	color: rgb(37, 88, 255);
+}
+
+.postgres {
+	color: yellow;
+}
+
+.graphql {
+	color: purple;
+}
+
+.python {
+	color: yellow;
 }

@@ -1,10 +1,25 @@
 import Image from "next/image";
 import HeroImage from "src/images/kin.png";
+import background from "src/images/mario_back.png";
 import styles from "../styles/MainHero.module.css";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { IoLogoJavascript } from "react-icons/Io";
+import {
+	SiTypescript,
+	SiPostgresql,
+	SiGraphql,
+	SiPython,
+} from "react-icons/si";
 
 export default function MainHero() {
 	return (
 		<div className={styles.main}>
+			{/* <Image
+				className={styles.backgroundImg}
+				role="logo"
+				alt="logo"
+				src={background}
+			></Image> */}
 			<Image
 				className={styles.heroImg}
 				role="logo"
@@ -12,15 +27,40 @@ export default function MainHero() {
 				src={HeroImage}
 			/>
 			<div className={styles.heroText}>
-				<h1>React Web Developer</h1>
+				<h1>
+					<span>{`< `}</span>
+					{`React`}
+					<span>{` / >`}</span>
+					{` Web Developer`}
+				</h1>
 				<div className={styles.IconList}>
-					<a className={styles.Icon}>Github</a>
-					<a className={styles.Icon}>LinkedIn</a>
+					<a
+						href="https://github.com/kin-cunico"
+						target="_blank"
+					>
+						<FaGithub className={styles.Icon} />
+					</a>
+					<a
+						href="https://www.linkedin.com/in/kincunicoen/"
+						target="_blank"
+					>
+						<FaLinkedin className={`${styles.Icon}`} />
+					</a>
 				</div>
 				<p>
-					Web developer focused on React based applications with Next.js,
-					GraphQL, and PostgreSQL.
+					Welcome! My name is Kin. <br />I am a developer focused on React based
+					applications.
 				</p>
+				<div className={styles.tech_cont}>
+					<h4>My tech stack:</h4>
+					<div className={styles.techs}>
+						<IoLogoJavascript className={`${styles.Icon} ${styles.js}`} />
+						<SiTypescript className={`${styles.Icon} ${styles.ts}`} />
+						<SiPostgresql className={`${styles.Icon} ${styles.postgres}`} />
+						<SiGraphql className={`${styles.Icon} ${styles.graphql}`} />
+						<SiPython className={`${styles.Icon} ${styles.python}`} />
+					</div>
+				</div>
 			</div>
 		</div>
 	);

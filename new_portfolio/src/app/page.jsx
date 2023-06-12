@@ -15,9 +15,13 @@ export default function Page() {
 		<>
 			{mounted && (
 				<main className={styles.main}>
-					<h1>I welcome you, wanderer!</h1>
+					<style>
+						@import
+						url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+					</style>
+					<h1>I WELCOME YOU, WANDERER!</h1>
 					<Link
-						href="pages/page"
+						href="/pages"
 						className={styles.container}
 					>
 						<div className={styles.stars}></div>
@@ -37,7 +41,7 @@ export default function Page() {
 						<div className={styles.stars15}></div>
 					</Link>
 					<h1 className={styles.click_text}>
-						<Link href="pages/page">E N T E R</Link>
+						<Link href="/pages">E N T E R</Link>
 					</h1>
 				</main>
 			)}

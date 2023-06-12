@@ -4,24 +4,55 @@
 	width: 100%;
 	display: flex;
 	justify-content: space-between;
-	background: darkolivegreen;
-	padding: 20px 20px;
-}
-
-.navbar ul {
-	display: flex;
 	align-items: center;
+	background: #040d21;
+	padding: 20px 20px;
+	position: fixed;
+}
+
+.navbar h1 {
+	font-family: "Press Start 2P", cursive;
+}
+
+.right_nav .wrapper {
+	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
-	gap: 10px;
-	height: 100%;
+	align-items: center;
+	gap: 20px;
 }
 
-.navbar ul > .link {
-	padding: 0px 20px;
+.link_wrapper {
+	display: flex;
+	padding: 20px 20px 5px 20px;
+	gap: 50px;
 }
 
-.navbar ul > .link:hover {
-	transition: 0.5s;
-	background: red;
-	transform: translateY(-5px);
+.galaga_wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 25px 10px 5px 10px;
+	align-items: center;
+	height: 100px;
+}
+
+.move {
+	animation: galagaMoving 5s ease-in-out infinite;
+}
+
+@keyframes galagaMoving {
+	0% {
+		transition: 1s linear infinite;
+		transform: translateX(150px);
+	}
+	50% {
+		transition: 1s linear infinite;
+		transform: translateX(-150px);
+	}
+
+	100% {
+		transition: 1s linear infinite;
+		transform: translateX(150px);
+	}
 }
