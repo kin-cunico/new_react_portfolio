@@ -1,21 +1,16 @@
 "use client";
-import * as React from "react";
 import styles from "./styles/Door.module.css";
 import Link from "next/link";
+import IndexLoader from "./components/Loader";
 
-export default function Door() {
+export default function Page() {
 	return (
 		<main className={styles.main}>
-			<head>
-				<style>
-					@import
-					url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-				</style>
-			</head>
+			<>{IndexLoader}</>
 			<h1>I welcome you, wanderer!</h1>
 			<Link
 				href={{
-					pathname: "/index/page",
+					pathname: "/index",
 				}}
 				className={styles.container}
 			>
@@ -36,7 +31,7 @@ export default function Door() {
 				<div className={styles.stars15}></div>
 			</Link>
 			<h1 className={styles.click_text}>
-				<Link href="/index/Page">E N T E R</Link>
+				<Link href="/Index">E N T E R</Link>
 			</h1>
 		</main>
 	);
