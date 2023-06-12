@@ -1,0 +1,203 @@
+.main {
+	width: 100%;
+	height: 100vh;
+	padding: 20px 20px;
+	margin: 0;
+	box-sizing: content-box;
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	background: black;
+	font-family: "Press Start 2P", cursive;
+}
+
+.door {
+	padding: 10px;
+	margin: 10px;
+	border-radius: 150px;
+	box-shadow: 1px 1px 200px 1px rgb(0, 33, 94);
+	background: transparent;
+	image-resolution: inherit;
+	cursor: crosshair;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.click_text {
+	display: flex;
+	cursor: pointer;
+}
+
+.container {
+	cursor: pointer;
+	position: relative;
+	background-color: #040d21;
+	position: relative;
+	z-index: 10;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	height: 70%;
+	width: 50%;
+	border-radius: 300px;
+	border: 20px solid rgba(0, 0, 0, 0.452);
+}
+
+/* =============================================*/
+
+.stars {
+	position: absolute;
+	top: 100px;
+	right: 100px;
+	border-radius: 60px;
+	animation: blinkingStar 5s linear infinite;
+}
+
+.stars2 {
+	position: absolute;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 30s infinite linear;
+}
+
+.stars3 {
+	position: absolute;
+	top: calc(100% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar 5s linear infinite;
+}
+
+.stars4 {
+	position: absolute;
+	left: calc(100% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar 10s linear infinite;
+}
+.stars5 {
+	position: absolute;
+	right: calc(100% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar 15s linear infinite;
+}
+.stars6 {
+	position: absolute;
+	left: calc(50% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar 20s linear infinite;
+}
+.stars7 {
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	border-radius: 60px;
+	animation: blinkingStar 12s linear infinite;
+}
+.stars8 {
+	position: absolute;
+	bottom: 200px;
+	right: 150px;
+	border-radius: 60px;
+	animation: blinkingStar 18s linear infinite;
+}
+.stars9 {
+	position: absolute;
+	bottom: 200px;
+	left: 300px;
+	border-radius: 60px;
+	animation: blinkingStar 25s linear infinite;
+}
+.stars10 {
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	border-radius: 60px;
+	animation: blinkingStar 5s linear infinite;
+}
+.stars11 {
+	position: absolute;
+	top: 100px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 30s infinite linear;
+}
+.stars12 {
+	position: absolute;
+	left: 100px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 20s infinite linear;
+}
+.stars13 {
+	position: absolute;
+	right: 100px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 30s infinite linear;
+}
+.stars14 {
+	position: absolute;
+	right: -400px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 40s infinite linear;
+}
+.stars15 {
+	position: absolute;
+	left: -400px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 50s infinite linear;
+}
+
+@keyframes fallingStar {
+	0% {
+		transition: 5s ease-out;
+		transform: translate3d(700px, -500px, 0px);
+		box-shadow: 1px -1px 1px 1px white;
+	}
+	50% {
+		transition: 5s ease-out;
+		transform: translate3d(20px, -50px, 0px);
+		box-shadow: 1px -1px 5px 1px rgb(255, 102, 0);
+	}
+	100% {
+		transition: 5s ease-out;
+		transform: translate3d(-700px, 500px, 400px);
+		box-shadow: 1px -1px 5px 1px rgba(0, 123, 255, 0.603);
+	}
+}
+
+@keyframes blinkingStar {
+	0% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 2px 2px rgb(150, 214, 254);
+	}
+	50% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 10px 1px white;
+	}
+	60% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 2px 2px white;
+	}
+	100% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 2px 2px rgb(150, 214, 254);
+	}
+}

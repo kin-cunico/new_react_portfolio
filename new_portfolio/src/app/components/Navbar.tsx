@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import logo from "src/images/kin-cunico.png";
+
 export default function Navbar() {
 	return (
 		<div className={styles.navbar}>

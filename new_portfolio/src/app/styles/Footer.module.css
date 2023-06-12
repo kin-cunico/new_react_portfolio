@@ -1,0 +1,80 @@
+.main {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 10px 10px;
+}
+
+.about_box {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 5px;
+	border: 1px solid blue;
+	align-items: center;
+	gap: 5px;
+}
+
+.about_box div {
+	border: 1px solid yellow;
+	color: red;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-rows: 2fr 2fr;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+.about_box div > p {
+	border: 1px solid green;
+}
+
+.legal_box {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 5px;
+	border: 1px solid blue;
+	align-items: center;
+	gap: 5px;
+}
+
+.legal_box div {
+	border: 1px solid yellow;
+	color: red;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-rows: 2fr 2fr;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+.legal_box div > p {
+	border: 1px solid green;
+}
+
+.contact_box {
+	display: flex;
+	flex-direction: column;
+	padding: 20px 5px;
+	border: 1px solid blue;
+	align-items: center;
+	gap: 5px;
+}
+
+.contact_box div {
+	border: 1px solid yellow;
+	color: red;
+	display: grid;
+	grid-template-columns: 2fr 2fr;
+	grid-template-rows: 2fr 2fr;
+	justify-content: space-evenly;
+	align-items: center;
+	text-align: center;
+	gap: 10px;
+}
+
+.contact_box div > p {
+	border: 1px solid green;
+}

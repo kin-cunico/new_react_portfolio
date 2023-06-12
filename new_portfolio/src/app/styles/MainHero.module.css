@@ -1,0 +1,31 @@
+.main {
+	margin: 0;
+	padding: 0;
+	box-sizing: content-box;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.heroImg {
+	display: flex;
+	align-items: right;
+	justify-content: end;
+}
+
+.heroText {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 10px;
+	gap: 20px;
+	text-align: center;
+}
+
+.IconList {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px 20px;
+}
