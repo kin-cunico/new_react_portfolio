@@ -17,7 +17,7 @@ export default function Page() {
 				<main className={styles.main}>
 					<h1>I welcome you, wanderer!</h1>
 					<Link
-						href="/pages/page"
+						href="pages/page"
 						className={styles.container}
 					>
 						<div className={styles.stars}></div>
@@ -37,7 +37,7 @@ export default function Page() {
 						<div className={styles.stars15}></div>
 					</Link>
 					<h1 className={styles.click_text}>
-						<Link href="/pages/page">E N T E R</Link>
+						<Link href="pages/page">E N T E R</Link>
 					</h1>
 				</main>
 			)}

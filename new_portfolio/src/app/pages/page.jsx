@@ -4,7 +4,7 @@ import MainHero from "../components/MainHero";
 import SubHero from "../components/SubHero";
 import Footer from "../components/Footer";
 
-export default function index({}) {
+export default function page({}) {
 	return (
 		<main className={styles.main}>
 			<Navbar />
