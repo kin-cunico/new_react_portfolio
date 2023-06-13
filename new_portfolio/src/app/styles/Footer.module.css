@@ -1,80 +1,107 @@
 .main {
 	display: flex;
+	font-size: 0.8em;
+	flex-direction: row;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
-	padding: 10px 10px;
+	align-items: center;
+	padding: 0px 10px;
+	width: 100%;
+	height: 100vh;
+}
+
+.footer_sec {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: top;
+	justify-content: space-evenly;
+	padding: 10px 20px;
+	position: relative;
+	gap: 70px;
 }
 
 .about_box {
 	display: flex;
 	flex-direction: column;
-	padding: 20px 5px;
-	border: 1px solid blue;
+	padding: 5px 5px;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
+	width: 300px;
 }
 
 .about_box div {
-	border: 1px solid yellow;
-	color: red;
-	display: grid;
-	grid-template-columns: 2fr 2fr;
-	grid-template-rows: 2fr 2fr;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
-	align-items: center;
+	align-items: top;
 	text-align: center;
 	gap: 10px;
 }
 
-.about_box div > p {
-	border: 1px solid green;
+.about_box div > a {
+	color: whitesmoke;
+}
+
+.about_box div > a:hover {
+	transition: 0.5s linear;
+	cursor: pointer;
+	color: orangered;
 }
 
 .legal_box {
 	display: flex;
 	flex-direction: column;
-	padding: 20px 5px;
-	border: 1px solid blue;
+	padding: 5px 5px;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
+	width: 360px;
 }
 
 .legal_box div {
-	border: 1px solid yellow;
-	color: red;
-	display: grid;
-	grid-template-columns: 2fr 2fr;
-	grid-template-rows: 2fr 2fr;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
 	gap: 10px;
+	width: 100%;
 }
 
-.legal_box div > p {
-	border: 1px solid green;
+.legal_box div > a:hover {
+	cursor: pointer;
+	color: orangered;
 }
 
 .contact_box {
 	display: flex;
 	flex-direction: column;
-	padding: 20px 5px;
-	border: 1px solid blue;
+	padding: 5px 5px;
 	align-items: center;
-	gap: 5px;
+	gap: 10px;
+	height: fit-content;
 }
 
 .contact_box div {
-	border: 1px solid yellow;
 	color: red;
-	display: grid;
-	grid-template-columns: 2fr 2fr;
-	grid-template-rows: 2fr 2fr;
+	display: flex;
+	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
 	text-align: center;
 	gap: 10px;
 }
 
-.contact_box div > p {
-	border: 1px solid green;
+.contact_box div > a {
+	border-radius: 20px;
+	padding: 5px 10px;
+	background: rgba(0, 119, 255, 0.101);
+	color: whitesmoke;
+	width: 300px;
+}
+
+.contact_box div > a:hover {
+	transition: 0.5s linear;
+	cursor: pointer;
+	background: rgba(255, 81, 0, 0.125);
 }

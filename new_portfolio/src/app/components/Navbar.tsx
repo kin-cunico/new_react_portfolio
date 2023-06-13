@@ -26,7 +26,9 @@ export default function Navbar() {
 				@import
 				url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 			</style>
-			<h1>Kin Cunico</h1>
+			<h1>
+				<span>Kin</span> Cunico
+			</h1>
 			<ul className={styles.right_nav}>
 				<div className={styles.wrapper}>
 					<div className={styles.link_wrapper}>
@@ -36,7 +38,7 @@ export default function Navbar() {
 							onClick={handleClick}
 							id="0"
 						>
-							Home
+							HOME
 						</Link>
 						<Link
 							href="/pages/projects"
@@ -44,7 +46,7 @@ export default function Navbar() {
 							onClick={handleClick}
 							id="1"
 						>
-							Projects
+							PROJECTS
 						</Link>
 						<Link
 							href="/pages"
@@ -52,7 +54,7 @@ export default function Navbar() {
 							onClick={handleClick}
 							id="2"
 						>
-							About
+							ABOUT
 						</Link>
 						<Link
 							href="/pages"
@@ -60,7 +62,7 @@ export default function Navbar() {
 							onClick={handleClick}
 							id="3"
 						>
-							Contact
+							CONTACT
 						</Link>
 					</div>
 					<div className={styles.galaga_wrapper}>

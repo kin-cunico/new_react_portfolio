@@ -3,19 +3,40 @@
 	margin: 0;
 	width: 100%;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	background: #040d21;
 	padding: 20px 20px;
-	position: fixed;
+	position: static;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+	border-bottom: 10px solid white;
 }
 
 .navbar h1 {
 	font-family: "Press Start 2P", cursive;
+	letter-spacing: 16px;
+	animation: blinkText 10s ease-in-out infinite;
+	text-align: center;
+}
+.navbar h1:hover {
+	animation: none;
+}
+
+.navbar h1 > span {
+	animation: blinkText 10s ease-in-out infinite;
+}
+
+.right_nav {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
 }
 
 .right_nav .wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	flex-direction: column;
 	justify-content: space-evenly;
 	align-items: center;
@@ -24,12 +45,31 @@
 
 .link_wrapper {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
 	padding: 20px 20px 5px 20px;
-	gap: 50px;
+	gap: 20px;
+}
+
+.link {
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-align: center;
+	letter-spacing: 4px;
+}
+
+.link:hover {
+	transition: 1s linear;
+	background: linear-gradient(
+		rgba(255, 68, 0, 0.215),
+		rgba(245, 245, 245, 0.191)
+	);
 }
 
 .galaga_wrapper {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
 	padding: 25px 10px 5px 10px;
@@ -44,15 +84,32 @@
 @keyframes galagaMoving {
 	0% {
 		transition: 1s linear infinite;
-		transform: translateX(150px);
+		transform: translateX(190px);
 	}
 	50% {
 		transition: 1s linear infinite;
-		transform: translateX(-150px);
+		transform: translateX(-190px);
 	}
 
 	100% {
 		transition: 1s linear infinite;
-		transform: translateX(150px);
+		transform: translateX(190px);
+	}
+}
+
+@keyframes blinkText {
+	0% {
+		transition: 2s ease-in;
+		color: transparent;
+	}
+	50% {
+		transition: 4s ease-in-out;
+		background: -webkit-linear-gradient(#00bfff, orangered);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	100% {
+		transition: 2s ease-out;
+		color: transparent;
 	}
 }

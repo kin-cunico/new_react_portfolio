@@ -1,20 +1,26 @@
 .main {
 	margin: 0;
-	padding: 40px 20px;
+	padding: 0;
 	box-sizing: content-box;
-	width: 100%;
-	height: 100vh;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
 	font-family: "Press Start 2P", cursive;
+	min-width: 360px;
+	max-width: 1920px;
+}
+
+.heroBox {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-evenly;
 }
 
 .heroImg {
 	display: flex;
-	align-items: bottom;
-	justify-content: end;
-	top: 100px;
+	flex-wrap: wrap;
 	border: 4px solid whitesmoke;
 	border-radius: 250px;
 }
@@ -22,13 +28,23 @@
 .heroText {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	padding: 10px 10px;
 	gap: 20px;
+	justify-content: space-between;
 	text-align: center;
-	justify-content: space-evenly;
-	left: -100px;
 }
 
+.heroText p {
+	box-sizing: content-box;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: justify;
+	width: 50%;
+	align-self: center;
+}
 .heroText h1 {
 	color: #00bfff;
 }
@@ -39,8 +55,8 @@
 
 .IconList {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 	padding: 20px 20px;
 }
 
@@ -49,12 +65,12 @@
 	width: 60px;
 	height: 60px;
 	cursor: pointer;
+	border-radius: 60px;
 }
 
-.backgroundImg {
-	display: flex;
-	height: 100%;
-	width: inherit;
+.Icon:hover {
+	transition: 0.5s;
+	box-shadow: 0px 0px 10px 5px orangered;
 }
 
 .tech_cont {
@@ -65,6 +81,7 @@
 
 .techs {
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
 	gap: 10px;
