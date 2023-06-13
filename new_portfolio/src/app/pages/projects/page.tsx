@@ -5,6 +5,7 @@ import GymWebsite from "src/images/Tree of Hope.png";
 import ChatApp from "src/images/Sunset by the Garda Lake.png";
 import Psy from "src/images/cruzeiro.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SubHero() {
 	return (
@@ -13,7 +14,11 @@ export default function SubHero() {
 				<h1>Projects</h1>
 				<div className={styles.projects_container}>
 					<div className={`${styles.proj_sm_cont}`}>
-						<div className={styles.inside_proj_cont}>
+						<Link
+							className={styles.inside_proj_cont}
+							href="/"
+							target="_blank"
+						>
 							<Image
 								src={curiousHumans}
 								alt="curious humans project"
@@ -24,9 +29,13 @@ export default function SubHero() {
 								Undergoing freelance project that aims to share educational
 								events across the UK.
 							</p>
-						</div>
+						</Link>
 					</div>
-					<div className={`${styles.proj_sm_cont}`}>
+					<Link
+						className={`${styles.proj_sm_cont}`}
+						href="/"
+						target="_blank"
+					>
 						<div className={styles.inside_proj_cont}>
 							<Image
 								src={GymWebsite}
@@ -36,8 +45,12 @@ export default function SubHero() {
 							<h4>Gym webApp</h4>
 							<p>WebApp using Typescript</p>
 						</div>
-					</div>
-					<div className={`${styles.proj_sm_cont}`}>
+					</Link>
+					<Link
+						href="/"
+						target="_blank"
+						className={`${styles.proj_sm_cont}`}
+					>
 						<div className={styles.inside_proj_cont}>
 							<Image
 								src={ChatApp}
@@ -47,8 +60,12 @@ export default function SubHero() {
 							<h4>Chat App </h4>
 							<p>Freelance fullstack web application</p>
 						</div>
-					</div>
-					<div className={`${styles.proj_sm_cont}`}>
+					</Link>
+					<Link
+						href="/"
+						target="_blank"
+						className={`${styles.proj_sm_cont}`}
+					>
 						<div className={styles.inside_proj_cont}>
 							<Image
 								src={Psy}
@@ -61,7 +78,7 @@ export default function SubHero() {
 								directly to patients.
 							</p>
 						</div>
-					</div>
+					</Link>
 				</div>
 			</div>
 		</main>
