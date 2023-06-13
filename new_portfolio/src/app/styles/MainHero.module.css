@@ -31,9 +31,7 @@
 .heroImg {
 	display: flex;
 	flex-wrap: wrap;
-	border-right: 4px dotted white;
-	border-bottom: 4px solid white;
-	border-left: 4px dotted white;
+	border: 4px dotted white;
 	border-top-right-radius: 40px;
 	border-bottom-left-radius: 40px;
 }
@@ -95,7 +93,6 @@
 .Icon:hover {
 	transition: 0.5s;
 	color: #00698c;
-	box-shadow: 0px 0px 20px 2px white;
 }
 
 .tech_cont {
