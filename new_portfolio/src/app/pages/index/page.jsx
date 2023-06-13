@@ -1,9 +1,9 @@
 "use client";
-import styles from "../page.module.css";
-import Navbar from "../components/Navbar";
-import MainHero from "../components/MainHero";
-import SubHero from "./projects/page";
-import Footer from "../components/Footer";
+import styles from "../../page.module.css";
+import Navbar from "../../components/Navbar";
+import MainHero from "../../components/MainHero";
+import SubHero from "../projects/page";
+import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 
 export default function Page() {

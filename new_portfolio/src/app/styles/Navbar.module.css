@@ -18,6 +18,7 @@
 	letter-spacing: 16px;
 	animation: blinkText 10s ease-in-out infinite;
 	text-align: center;
+	cursor: none;
 }
 .navbar h1:hover {
 	animation: none;
@@ -61,10 +62,7 @@
 
 .link:hover {
 	transition: 1s linear;
-	background: linear-gradient(
-		rgba(255, 68, 0, 0.215),
-		rgba(245, 245, 245, 0.191)
-	);
+	color: orangered;
 }
 
 .galaga_wrapper {

@@ -95,7 +95,6 @@
 .contact_box div > a {
 	border-radius: 20px;
 	padding: 5px 10px;
-	background: rgba(0, 119, 255, 0.101);
 	color: whitesmoke;
 	width: 300px;
 }
@@ -103,5 +102,5 @@
 .contact_box div > a:hover {
 	transition: 0.5s linear;
 	cursor: pointer;
-	background: rgba(255, 81, 0, 0.125);
+	color: orangered;
 }

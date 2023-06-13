@@ -44,8 +44,8 @@ export default function MainHero() {
 						</a>
 					</div>
 					<p>
-						Welcome! My name is Kin. I am a fullstack developer focused on React
-						based applications.
+						My name is Kin. I am a fullstack developer focused on React based
+						applications.
 					</p>
 					<div className={styles.tech_cont}>
 						<h4>My tech stack:</h4>
