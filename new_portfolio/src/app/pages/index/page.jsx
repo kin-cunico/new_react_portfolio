@@ -20,8 +20,8 @@ export default function Page() {
 				<main className={styles.main}>
 					<Navbar />
 					<MainHero />
-					<SubHero />
-					<Footer />
+					<SubHero id="projects" />
+					<Footer id="contacts" />
 				</main>
 			)}
 		</>

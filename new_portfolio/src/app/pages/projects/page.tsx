@@ -9,7 +9,10 @@ import Link from "next/link";
 
 export default function SubHero() {
 	return (
-		<main className={styles.main}>
+		<main
+			className={styles.main}
+			id="projects"
+		>
 			<div className={styles.projects_out_container}>
 				<h1>Projects</h1>
 				<div className={styles.projects_container}>

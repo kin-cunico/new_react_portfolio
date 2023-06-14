@@ -1,0 +1,67 @@
+.form {
+	margin: 0;
+	padding: 0;
+	background: palegoldenrod;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	padding: 10px 20px;
+	width: inherit;
+	height: auto;
+}
+
+.label {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: 10px;
+}
+
+.errors {
+	background: red;
+	border-radius: 20px;
+	text-align: center;
+	width: 250px;
+	padding: 10px 20px;
+}
+
+.input {
+	width: 300px;
+	height: 50px;
+	text-align: center;
+}
+
+.inputMessage {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	gap: 10px;
+}
+
+.textArea {
+	height: 50vh;
+	width: 70vh;
+	text-align: justify;
+}
+
+.submit_btn {
+	align-self: center;
+	width: 200px;
+	height: 50px;
+	border-radius: 20px;
+	cursor: pointer;
+}

@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
-import logo from "src/images/kin-cunico.png";
 import galaga from "src/images/galaga.png";
 import { useState, useEffect, useRef } from "react";
 
@@ -69,7 +68,7 @@ export default function Navbar() {
 							PROJECTS
 						</Link>
 						<Link
-							href="/pages"
+							href="/pages/about"
 							className={styles.link}
 							onClick={handleClick}
 							id="2"
@@ -78,7 +77,7 @@ export default function Navbar() {
 							ABOUT
 						</Link>
 						<Link
-							href="/pages"
+							href="/pages/contact"
 							className={styles.link}
 							onClick={handleClick}
 							id="3"
