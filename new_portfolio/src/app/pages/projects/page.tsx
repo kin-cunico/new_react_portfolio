@@ -13,6 +13,7 @@ export default function SubHero() {
 			className={styles.main}
 			id="projects"
 		>
+			<Navbar />
 			<div className={styles.projects_out_container}>
 				<h1>Projects</h1>
 				<div className={styles.projects_container}>

@@ -2,7 +2,7 @@
 import styles from "../../page.module.css";
 import Navbar from "../../components/Navbar";
 import MainHero from "../../components/MainHero";
-import SubHero from "../projects/page";
+import Vitrine from "../../components/Vitrine";
 import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 
@@ -20,7 +20,7 @@ export default function Page() {
 				<main className={styles.main}>
 					<Navbar />
 					<MainHero />
-					<SubHero id="projects" />
+					<Vitrine />
 					<Footer id="contacts" />
 				</main>
 			)}

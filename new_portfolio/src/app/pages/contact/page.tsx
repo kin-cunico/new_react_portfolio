@@ -4,6 +4,7 @@ import * as React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import styles from "../../styles/Contact.module.css";
+import Navbar from "@/app/components/Navbar";
 
 export default function ContactUs() {
 	const formik = useFormik({
@@ -39,6 +40,7 @@ export default function ContactUs() {
 			className={styles.form}
 			target="_blank"
 		>
+			<Navbar />
 			<div className={styles.container}>
 				<label className={styles.label}>
 					<input

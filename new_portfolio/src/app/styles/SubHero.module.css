@@ -2,11 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	height: 110vh;
+	height: 100vh;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
-	padding: 20px 20px;
 }
 
 .projects_out_container {

@@ -63,7 +63,6 @@ export default function Navbar() {
 							className={styles.link}
 							onClick={handleClick}
 							id="1"
-							target="_blank"
 						>
 							PROJECTS
 						</Link>
@@ -72,7 +71,6 @@ export default function Navbar() {
 							className={styles.link}
 							onClick={handleClick}
 							id="2"
-							target="_blank"
 						>
 							ABOUT
 						</Link>
@@ -81,7 +79,6 @@ export default function Navbar() {
 							className={styles.link}
 							onClick={handleClick}
 							id="3"
-							target="_blank"
 						>
 							CONTACT
 						</Link>
