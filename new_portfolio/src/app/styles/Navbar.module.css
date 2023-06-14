@@ -6,11 +6,15 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	background: #040d21;
+	background: #000000;
 	padding: 20px 20px;
-	position: static;
+	position: sticky;
 	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-	border-bottom: 10px solid white;
+	border-bottom: 10px solid rgb(0, 33, 94);
+	border: 10px solid rgb(0, 33, 94);
+	overflow: hidden;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .navbar h1 {
@@ -19,9 +23,14 @@
 	animation: blinkText 10s ease-in-out infinite;
 	text-align: center;
 	cursor: none;
+	padding: 20px 20px;
+	border: 4px solid rgb(0, 33, 94);
+	border-radius: 20px;
+	box-shadow: 0px 1px 20px 1px rgb(0, 33, 94);
 }
 .navbar h1:hover {
 	animation: none;
+	background: rgba(0, 0, 0, 0.238);
 }
 
 .navbar h1 > span {
@@ -59,6 +68,9 @@
 	text-align: center;
 	letter-spacing: 4px;
 	transition: 0.5s;
+	width: 150px;
+	border: 2px solid rgb(0, 33, 94);
+	box-shadow: 0px 0px 10px 1px rgb(0, 33, 94);
 }
 
 .link:hover {
@@ -99,7 +111,6 @@
 @keyframes blinkText {
 	0% {
 		transition: 2s ease-in;
-		color: transparent;
 	}
 	50% {
 		transition: 4s ease-in-out;
@@ -110,6 +121,7 @@
 	75% {
 		transition: 2s ease-out;
 		color: transparent;
+		background: transparent;
 	}
 	100% {
 		transition: 4s ease-in-out;
@@ -120,12 +132,27 @@
 }
 
 .shot {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
 	width: 1px;
 	height: 1px;
 	background: whitesmoke;
 	border-radius: 60px;
 	animation: shotsFired 25s linear;
+}
+
+.shot::after {
+	content: "";
+	border-radius: 60px;
+	width: 1px;
+	height: 1px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-self: center;
+	animation: blinkingStar 10s linear infinite;
 }
 
 @keyframes shotsFired {
@@ -151,7 +178,7 @@
 		width: 4px;
 		height: 4px;
 		transform: scale(120%);
-		box-shadow: 0px 0px 70px 10px rgb(255, 0, 0);
+		box-shadow: 0px 0px 50px 10px rgb(255, 0, 0);
 	}
 	90% {
 		transition: 5s linear;
@@ -165,5 +192,214 @@
 		transition: 10s linear;
 		box-shadow: none;
 		background: transparent;
+	}
+}
+
+/* =============================================*/
+
+.stars {
+	position: absolute;
+	background: white;
+	height: 1px;
+	width: 1px;
+	top: 100px;
+	right: 100px;
+	border-radius: 60px;
+	animation: blinkingStar2 5s linear infinite;
+}
+
+.stars2 {
+	position: absolute;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 30s infinite linear;
+}
+
+.stars3 {
+	fill: white;
+	background: white;
+	height: 1px;
+	width: 1px;
+	position: absolute;
+	top: calc(100% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar 5s linear infinite;
+}
+
+.stars4 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	left: calc(100% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar2 10s linear infinite;
+}
+.stars5 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	right: calc(100% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar 5s linear infinite;
+}
+.stars6 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	left: calc(50% - 20px);
+	border-radius: 60px;
+	animation: blinkingStar2 5s linear infinite;
+}
+.stars7 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	top: 100px;
+	left: 250px;
+	border-radius: 60px;
+	animation: blinkingStar 12s linear infinite;
+}
+.stars8 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	bottom: 200px;
+	right: 150px;
+	border-radius: 60px;
+	animation: blinkingStar 18s linear infinite;
+}
+.stars9 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	bottom: 200px;
+	left: 300px;
+	border-radius: 60px;
+	animation: blinkingStar 25s linear infinite;
+}
+.stars10 {
+	height: 1px;
+	width: 1px;
+	fill: white;
+	background: white;
+	position: absolute;
+	top: 40px;
+	left: 0px;
+	border-radius: 60px;
+	animation: blinkingStar2 5s linear infinite;
+}
+.stars11 {
+	position: absolute;
+	top: 100px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 30s infinite linear;
+}
+.stars12 {
+	position: absolute;
+	left: 100px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 20s infinite linear;
+}
+.stars13 {
+	position: absolute;
+	right: 100px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 30s infinite linear;
+}
+.stars14 {
+	position: absolute;
+	right: -400px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 50s infinite linear;
+}
+.stars15 {
+	position: absolute;
+	left: -400px;
+	fill: white;
+	background: white;
+	border-radius: 60px;
+	border: 1px solid white;
+	animation: fallingStar 50s infinite linear;
+}
+
+@keyframes fallingStar {
+	0% {
+		transition: 30s ease-out;
+		transform: translate3d(700px, -500px, 0px);
+		box-shadow: 1px -1px 1px 1px white;
+	}
+
+	100% {
+		transition: 30s ease-out;
+		transform: translate3d(-1300px, 1000px, 400px);
+		box-shadow: 1px -1px 5px 1px rgba(0, 123, 255, 0.603);
+		background: transparent;
+	}
+}
+
+@keyframes blinkingStar {
+	0% {
+		transition: 5s ease-in;
+		box-shadow: 0px 0px 10px 1px rgb(150, 214, 254);
+	}
+	50% {
+		transition: 5s ease-in;
+		box-shadow: 0px 0px 2px 2px white;
+	}
+	60% {
+		transition: 5s ease-in;
+		box-shadow: 0px 0px 1px 1px rgb(150, 214, 254);
+	}
+	100% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 2px 2px white;
+	}
+}
+
+@keyframes blinkingStar2 {
+	0% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 2px 2px rgb(219, 44, 0);
+	}
+	50% {
+		transition: 5s ease-out;
+		background: white;
+		box-shadow: 0px 0px 10px 1px white;
+	}
+	60% {
+		transition: 5s ease-out;
+		box-shadow: 0px 0px 2px 2px white;
+		background: white;
+	}
+	100% {
+		transition: 5s ease-out;
+		background: white;
+		box-shadow: 0px 0px 2px 2px rgb(255, 131, 100);
 	}
 }

@@ -6,6 +6,7 @@ import ChatApp from "src/images/Sunset by the Garda Lake.png";
 import Psy from "src/images/cruzeiro.png";
 import Image from "next/image";
 import Link from "next/link";
+import Footer from "@/app/components/Footer";
 
 export default function SubHero() {
 	return (
@@ -85,6 +86,7 @@ export default function SubHero() {
 					</Link>
 				</div>
 			</div>
+			<Footer />
 		</main>
 	);
 }

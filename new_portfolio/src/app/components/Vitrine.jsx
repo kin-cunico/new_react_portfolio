@@ -9,7 +9,7 @@ export default function Vitrine() {
 				id="vitrine"
 				href="#vitrine"
 			>
-				Vitrine
+				VITRINE
 			</a>
 			<div className={styles.container}>
 				<div className={styles.cards}>

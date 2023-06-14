@@ -11,6 +11,10 @@ export default function Page() {
 			setMounted(true);
 		}
 	}, []);
+
+	function StarsContainer() {
+		document.querySelector("#starsContainer");
+	}
 	return (
 		<>
 			{mounted && (
@@ -20,9 +24,11 @@ export default function Page() {
 						url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 					</style>
 					<h1>I WELCOME YOU, WANDERER!</h1>
+
 					<Link
 						href="/pages/index"
 						className={styles.container}
+						id="starsContainer"
 					>
 						<div className={styles.stars}></div>
 						<div className={styles.stars2}></div>
