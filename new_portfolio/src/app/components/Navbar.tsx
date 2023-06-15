@@ -96,7 +96,7 @@ export default function Navbar() {
 							alt="Galaga Ship - Galaga Animated Gif Transparent@pngkey.com"
 							width={30}
 							height={30}
-							className={`${styles.nav_icon}, ${styles.move}`}
+							// className={`${styles.nav_icon}, ${styles.move}`}
 							id={`${styles.nav_icon}`}
 						></Image>
 						<div className={styles.stars}></div>
