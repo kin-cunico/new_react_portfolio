@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Img from "next/image";
 import HeroImage from "src/images/kin.png";
 import styles from "../styles/MainHero.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
@@ -14,11 +14,11 @@ export default function MainHero() {
 	return (
 		<div className={styles.main}>
 			<div className={styles.heroBox}>
-				<img
+				<Img
 					className={styles.heroImg}
 					role="developer photo"
 					alt="developer photo"
-					src="src/images/kin.png"
+					src={HeroImage}
 				/>
 
 				<div className={styles.heroText}>

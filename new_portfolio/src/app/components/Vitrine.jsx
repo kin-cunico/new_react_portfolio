@@ -1,5 +1,5 @@
 import styles from "../styles/Vitrine.module.css";
-import Image from "next/image";
+import Img from "next/image";
 import cruzeiro from "src/images/cruzeiro.png";
 
 export default function Vitrine() {
@@ -15,7 +15,7 @@ export default function Vitrine() {
 				<div className={styles.cards}>
 					<div className={styles.card}>
 						<div className={styles.Img}>
-							<Image
+							<Img
 								src={cruzeiro}
 								id="img"
 								alt="card 1 image"
@@ -33,7 +33,7 @@ export default function Vitrine() {
 					</div>
 					<div className={styles.card}>
 						<div className={styles.Img}>
-							<Image
+							<Img
 								src={cruzeiro}
 								id="img"
 								alt="card 1 image"
@@ -51,7 +51,7 @@ export default function Vitrine() {
 					</div>
 					<div className={styles.card}>
 						<div className={styles.Img}>
-							<Image
+							<Img
 								src={cruzeiro}
 								id="img"
 								alt="card 1 image"
