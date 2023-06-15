@@ -4,7 +4,7 @@ import curiousHumans from "src/images/Orange Sky.png";
 import GymWebsite from "src/images/Tree of Hope.png";
 import ChatApp from "src/images/Sunset by the Garda Lake.png";
 import Psy from "src/images/cruzeiro.png";
-import Img from "next/image";
+import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/app/components/Footer";
 
@@ -24,7 +24,7 @@ export default function SubHero() {
 							href="/"
 							target="_blank"
 						>
-							<Img
+							<Image
 								src={curiousHumans}
 								alt="curious humans project"
 								className={styles.images_cont}
@@ -42,7 +42,7 @@ export default function SubHero() {
 						target="_blank"
 					>
 						<div className={styles.inside_proj_cont}>
-							<Img
+							<Image
 								src={GymWebsite}
 								alt="curious humans project"
 								className={styles.images_cont}
@@ -57,7 +57,7 @@ export default function SubHero() {
 						className={`${styles.proj_sm_cont}`}
 					>
 						<div className={styles.inside_proj_cont}>
-							<Img
+							<Image
 								src={ChatApp}
 								alt="curious humans project"
 								className={styles.images_cont}
@@ -72,7 +72,7 @@ export default function SubHero() {
 						className={`${styles.proj_sm_cont}`}
 					>
 						<div className={styles.inside_proj_cont}>
-							<Img
+							<Image
 								src={Psy}
 								alt="curious humans project"
 								className={styles.images_cont}
