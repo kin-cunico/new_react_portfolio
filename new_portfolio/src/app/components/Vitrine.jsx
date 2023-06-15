@@ -1,6 +1,6 @@
 import styles from "../styles/Vitrine.module.css";
 import Image from "next/image";
-import cruzeiro from "src/images/cruzeiro.png";
+import cruzeiro from "public/images/Tree of Hope.png";
 
 export default function Vitrine() {
 	return (

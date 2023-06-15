@@ -1,9 +1,9 @@
 import styles from "src/app/styles/SubHero.module.css";
 import Navbar from "../../components/Navbar";
-import curiousHumans from "src/images/Orange Sky.png";
-import GymWebsite from "src/images/Tree of Hope.png";
-import ChatApp from "src/images/Sunset by the Garda Lake.png";
-import Psy from "src/images/cruzeiro.png";
+import curiousHumans from "public/images/cruzeiro.png";
+import GymWebsite from "public/images/Orange Sky.png";
+import ChatApp from "public/images/Sunset by the Garda Lake.png";
+import Psy from "public/images/Tree of Hope.png";
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "@/app/components/Footer";
@@ -47,7 +47,7 @@ export default function SubHero() {
 								alt="curious humans project"
 								className={styles.images_cont}
 							/>
-							<h4>Gym webApp</h4>
+							<h4>Gym SPApp</h4>
 							<p>WebApp using Typescript</p>
 						</div>
 					</Link>
@@ -77,7 +77,7 @@ export default function SubHero() {
 								alt="curious humans project"
 								className={styles.images_cont}
 							/>
-							<h4>Curious Humans</h4>
+							<h4>PsyCare</h4>
 							<p>
 								Freelance fullstack web application that connects Psychologists
 								directly to patients.
