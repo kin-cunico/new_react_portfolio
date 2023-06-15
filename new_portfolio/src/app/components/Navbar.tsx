@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Img from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import galaga from "src/images/galaga.png";
@@ -9,7 +9,6 @@ import StarsContainer from "../page";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
-	const [isShot, setIsShot] = useState(false);
 	let starsContainer = StarsContainer;
 	console.log(starsContainer);
 	const handleClick = () => {
@@ -92,14 +91,14 @@ export default function Navbar() {
 						</Link>
 					</div>
 					<div className={styles.galaga_wrapper}>
-						<Image
+						<Img
 							src={galaga}
 							alt="Galaga Ship - Galaga Animated Gif Transparent@pngkey.com"
 							width={30}
 							height={30}
 							className={`${styles.nav_icon}, ${styles.move}`}
 							id={`${styles.nav_icon}`}
-						></Image>
+						></Img>
 						<div className={styles.stars}></div>
 						<div className={styles.stars2}></div>
 						<div className={styles.stars3}></div>
