@@ -16,8 +16,8 @@ export default function MainHero() {
 			<div className={styles.heroBox}>
 				<Image
 					className={styles.heroImg}
-					role="logo"
-					alt="logo"
+					role="developer photo"
+					alt="developer photo"
 					src={HeroImage}
 				/>
 
