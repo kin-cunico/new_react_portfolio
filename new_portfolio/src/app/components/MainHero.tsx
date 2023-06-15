@@ -14,11 +14,11 @@ export default function MainHero() {
 	return (
 		<div className={styles.main}>
 			<div className={styles.heroBox}>
-				<Image
+				<img
 					className={styles.heroImg}
-					role="logo"
-					alt="logo"
-					src={HeroImage}
+					role="developer photo"
+					alt="developer photo"
+					src="src/images/kin.png"
 				/>
 
 				<div className={styles.heroText}>
