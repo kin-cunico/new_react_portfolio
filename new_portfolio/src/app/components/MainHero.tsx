@@ -2,7 +2,7 @@ import Image from "next/image";
 import HeroImage from "src/images/kin.png";
 import styles from "../styles/MainHero.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/Io";
+import { DiJavascript1 } from "react-icons/di";
 import {
 	SiTypescript,
 	SiPostgresql,
@@ -49,7 +49,7 @@ export default function MainHero() {
 					<div className={styles.tech_cont}>
 						<h4>My tech stack:</h4>
 						<div className={styles.techs}>
-							<IoLogoJavascript className={`${styles.Icon} ${styles.js}`} />
+							<DiJavascript1 className={`${styles.Icon} ${styles.js}`} />
 							<SiTypescript className={`${styles.Icon} ${styles.ts}`} />
 							<SiPostgresql className={`${styles.Icon} ${styles.postgres}`} />
 							<SiGraphql className={`${styles.Icon} ${styles.graphql}`} />

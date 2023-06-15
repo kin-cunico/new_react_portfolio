@@ -83,7 +83,6 @@
 .Icon {
 	color: #00bfff;
 	position: relative;
-	border: 4px solid rgb(0, 0, 0);
 	width: 60px;
 	height: 60px;
 	cursor: pointer;
@@ -111,21 +110,37 @@
 }
 
 .js {
-	color: yellow;
+	color: rgb(255, 255, 121);
+}
+
+.js:hover {
+	color: rgb(255, 230, 0);
 }
 
 .ts {
-	color: rgb(37, 88, 255);
+	color: rgb(116, 148, 255);
+}
+
+.ts:hover {
+	color: rgb(24, 57, 165);
 }
 
 .postgres {
-	color: yellow;
+	color: rgb(255, 255, 167);
+}
+
+.postgres:hover {
+	color: rgb(255, 255, 0);
 }
 
 .graphql {
-	color: purple;
+	color: rgb(255, 116, 255);
+}
+
+.graphql:hover {
+	color: rgb(255, 0, 255);
 }
 
 .python {
-	color: yellow;
+	color: rgb(255, 255, 116);
 }
