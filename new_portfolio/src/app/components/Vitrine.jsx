@@ -1,6 +1,6 @@
 import styles from "../styles/Vitrine.module.css";
 import Image from "next/image";
-import cruzeiro from "src/images/cruzeiro.png";
+import cruzeiro from "public/images/cruzeiro.png";
 
 export default function Vitrine() {
 	return (

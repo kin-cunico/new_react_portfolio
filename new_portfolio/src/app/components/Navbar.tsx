@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
-import galaga from "src/images/galaga.png";
+import galaga from "public/images/galaga.png";
 import { useState, useEffect, useRef } from "react";
 import StarsContainer from "../page";
 
@@ -96,7 +96,7 @@ export default function Navbar() {
 							alt="Galaga Ship - Galaga Animated Gif Transparent@pngkey.com"
 							width={30}
 							height={30}
-							// className={`${styles.nav_icon}, ${styles.move}`}
+							className={`${styles.nav_icon}, ${styles.move}`}
 							id={`${styles.nav_icon}`}
 						></Image>
 						<div className={styles.stars}></div>
