@@ -19,10 +19,6 @@ export default function Page() {
 		<>
 			{mounted && (
 				<main className={styles.main}>
-					<style>
-						@import
-						url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
-					</style>
 					<h1>I WELCOME YOU, WANDERER!</h1>
 
 					<Link

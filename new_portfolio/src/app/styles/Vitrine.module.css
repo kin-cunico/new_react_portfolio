@@ -38,6 +38,8 @@
 	flex-wrap: wrap;
 	gap: 100px 50px;
 	padding: 100px 50px;
+
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 .cards .card {

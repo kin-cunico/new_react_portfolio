@@ -6,7 +6,6 @@
 	flex-wrap: wrap;
 	justify-content: space-evenly;
 	align-items: center;
-	font-family: "Press Start 2P", cursive;
 	min-width: 360px;
 	max-width: 1920px;
 	height: 100%;
@@ -64,6 +63,7 @@
 	text-align: justify;
 	width: 40%;
 	align-self: center;
+	font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 .heroText h1 {
 	color: #00bfff;
