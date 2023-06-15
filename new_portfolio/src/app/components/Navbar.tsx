@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
-import galaga from "src/images/galaga.png";
+import galaga from "public/images/galaga.png";
 import { useState, useEffect, useRef } from "react";
 import StarsContainer from "../page";
 
