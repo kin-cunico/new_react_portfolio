@@ -1,6 +1,5 @@
 import Image from "next/image";
 import HeroImage from "src/images/kin.png";
-import background from "src/images/mario_back.png";
 import styles from "../styles/MainHero.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { IoLogoJavascript } from "react-icons/Io";
