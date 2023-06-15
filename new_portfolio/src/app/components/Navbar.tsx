@@ -9,7 +9,6 @@ import StarsContainer from "../page";
 
 export default function Navbar() {
 	const [isOpen, setIsOpen] = useState(false);
-	const [isShot, setIsShot] = useState(false);
 	let starsContainer = StarsContainer;
 	console.log(starsContainer);
 	const handleClick = () => {
