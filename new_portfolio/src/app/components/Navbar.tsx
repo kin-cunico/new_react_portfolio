@@ -5,6 +5,7 @@ import Link from "next/link";
 import styles from "../styles/Navbar.module.css";
 import { useState, useEffect, useRef } from "react";
 import StarsContainer from "../page";
+import galaga from "public/galaga.png";
 
 export default function Navbar({}) {
 	const [isOpen, setIsOpen] = useState(false);
@@ -42,7 +43,7 @@ export default function Navbar({}) {
 			shot.style.left = `${x - 5}px`;
 			shot.style.top = `${y - 5}px`;
 		});
-	}, [""]);
+	}, []);
 
 	return (
 		<div
@@ -91,7 +92,7 @@ export default function Navbar({}) {
 					</div>
 					<div className={styles.galaga_wrapper}>
 						<Image
-							src="public/galaga.png"
+							src={galaga}
 							alt="Testing 2 // Galaga Ship - Galaga Animated Gif Transparent@pngkey.com"
 							width={30}
 							height={30}
