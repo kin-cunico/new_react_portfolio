@@ -1,5 +1,5 @@
 import Image from "next/image";
-import HeroImage from "public/images/kin.png";
+import HeroImage from "public/kin.png";
 import styles from "../styles/MainHero.module.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { DiJavascript1 } from "react-icons/di";
