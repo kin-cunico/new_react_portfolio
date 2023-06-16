@@ -6,7 +6,7 @@ import Vitrine from "../../components/Vitrine";
 import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 
-export default function Page() {
+export default function Page({ items }) {
 	//mounting to lazy loading
 	const [mounted, setMounted] = useState(false);
 	useEffect(() => {
@@ -26,4 +26,13 @@ export default function Page() {
 			)}
 		</>
 	);
+}
+
+export async function getStaticProps() {
+	const results = await fetch("out/_next/static/media?media_type=image");
+	const preview = await results.json();
+	const items = await preview.collection.items;
+	return {
+		props: { items },
+	};
 }
