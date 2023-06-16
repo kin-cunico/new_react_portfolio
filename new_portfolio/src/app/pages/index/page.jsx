@@ -6,7 +6,7 @@ import Vitrine from "../../components/Vitrine";
 import Footer from "../../components/Footer";
 import { useState, useEffect } from "react";
 
-export default function Page({ items }) {
+export default function Page() {
 	//mounting to lazy loading
 	const [mounted, setMounted] = useState(false);
 	useEffect(() => {
