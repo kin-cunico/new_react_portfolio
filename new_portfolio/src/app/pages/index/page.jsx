@@ -27,12 +27,3 @@ export default function Page({ items }) {
 		</>
 	);
 }
-
-export async function getStaticProps() {
-	const results = await fetch("out/_next/static/media?media_type=image");
-	const preview = await results.json();
-	const items = await preview.collection.items;
-	return {
-		props: { items },
-	};
-}
