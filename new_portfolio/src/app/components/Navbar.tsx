@@ -93,7 +93,7 @@ export default function Navbar() {
 					<div className={styles.galaga_wrapper}>
 						<Image
 							src="/images/galaga.png"
-							alt="Galaga Ship - Galaga Animated Gif Transparent@pngkey.com"
+							alt="Testing // Galaga Ship - Galaga Animated Gif Transparent@pngkey.com"
 							width={30}
 							height={30}
 							className={`${styles.nav_icon}, ${styles.move}`}
