@@ -28,12 +28,12 @@ export default function Vitrine() {
 								Little Lemon Capstone project for the Meta Front-end Developer
 								Certificate
 							</p>
-							<a
+							<Link
 								href="/pages/littlelemon"
 								className={styles.boxLink}
 							>
 								See more
-							</a>
+							</Link>
 						</div>
 					</div>
 					<div className={styles.card}>
