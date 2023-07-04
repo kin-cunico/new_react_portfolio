@@ -105,8 +105,25 @@
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
-	gap: 10px;
+	gap: 20px;
 	padding: 30px 10px;
+}
+
+.iconBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 10px;
+}
+.iconBox label {
+	font-size: 0.5rem;
+}
+.iconBox:hover > label {
+	transition: 2s;
+	background: linear-gradient(90deg, orangered, #00698c);
+	-webkit-background-clip: text;
+	color: transparent;
 }
 
 .js {
@@ -114,33 +131,55 @@
 }
 
 .js:hover {
+	transition: 0.5s;
 	color: rgb(255, 230, 0);
 }
 
 .ts {
-	color: rgb(116, 148, 255);
+	color: rgb(37, 101, 250);
 }
 
 .ts:hover {
+	transition: 0.5s;
 	color: rgb(24, 57, 165);
 }
 
 .postgres {
-	color: rgb(255, 255, 167);
-}
-
-.postgres:hover {
 	color: rgb(255, 255, 0);
 }
 
+.postgres:hover {
+	transition: 0.5s;
+	color: rgb(200, 200, 0);
+}
+
 .graphql {
-	color: rgb(255, 116, 255);
+	color: rgb(255, 0, 255);
 }
 
 .graphql:hover {
-	color: rgb(255, 0, 255);
+	transition: 0.5s;
+	color: rgb(200, 0, 200);
 }
 
 .python {
 	color: rgb(255, 255, 116);
+}
+
+.mongodb {
+	color: greenyellow;
+}
+
+.mongodb:hover {
+	transition: 0.5s;
+	color: green;
+}
+
+.tailwind {
+	color: rgb(5, 254, 254);
+}
+
+.tailwind:hover {
+	transition: 0.5s;
+	color: rgb(0, 200, 200);
 }

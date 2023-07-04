@@ -29,7 +29,8 @@
 		"**/*.tsx",
 		".next/types/**/*.ts",
 		"src/app/page.jsx",
-		"src/app/pages/index.js"
+		"src/app/pages/index.js",
+		"src/app/pages/littlelemon/page.jsx"
 	],
 	"exclude": ["node_modules"]
 }

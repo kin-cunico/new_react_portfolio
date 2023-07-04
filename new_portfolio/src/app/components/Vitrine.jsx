@@ -1,6 +1,7 @@
 import styles from "../styles/Vitrine.module.css";
 import Image from "next/image";
-import cruzeiro from "public/Tree of Hope.png";
+import littleLemon from "public/landing_page.jpg";
+import Link from "next/link";
 
 export default function Vitrine() {
 	return (
@@ -16,25 +17,29 @@ export default function Vitrine() {
 					<div className={styles.card}>
 						<div className={styles.Img}>
 							<Image
-								src={cruzeiro}
+								src={littleLemon}
 								id="img"
 								alt="card 1 image"
 							/>
 						</div>
 						<div className={styles.content}>
-							<h2>Data Structured </h2>
+							<h2>Little Lemon </h2>
 							<p>
-								Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean
-								commodo ligula eget dolor. Aenean massa. Cum sociis natoque
-								penatibus et magnis dis parturient montes, nascetur ridiculus
-								mus.
+								Little Lemon Capstone project for the Meta Front-end Developer
+								Certificate
 							</p>
+							<a
+								href="/pages/littlelemon"
+								className={styles.boxLink}
+							>
+								See more
+							</a>
 						</div>
 					</div>
 					<div className={styles.card}>
 						<div className={styles.Img}>
 							<Image
-								src={cruzeiro}
+								src={littleLemon}
 								id="img"
 								alt="card 1 image"
 							/>
@@ -52,7 +57,7 @@ export default function Vitrine() {
 					<div className={styles.card}>
 						<div className={styles.Img}>
 							<Image
-								src={cruzeiro}
+								src={littleLemon}
 								id="img"
 								alt="card 1 image"
 							/>

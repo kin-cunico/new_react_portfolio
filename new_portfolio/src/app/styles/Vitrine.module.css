@@ -95,6 +95,9 @@
 	height: 30px;
 	overflow: hidden;
 	transition: 0.5s;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 .cards .card:hover .content {
@@ -113,5 +116,9 @@
 	color: orangered;
 }
 
-.cards .card .content p {
+.boxLink {
+	font-size: 0.5rem;
+	position: absolute;
+	bottom: 50px;
+	align-self: center;
 }

@@ -2,7 +2,7 @@ import styles from "src/app/styles/SubHero.module.css";
 import Navbar from "../../components/Navbar";
 import curiousHumans from "public/cruzeiro.png";
 import GymWebsite from "public/Orange Sky.png";
-import ChatApp from "public/Sunset by the Garda Lake.png";
+import LitteLemon from "public/landing_page.jpg";
 import Psy from "public/Tree of Hope.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,7 +21,7 @@ export default function SubHero() {
 					<div className={`${styles.proj_sm_cont}`}>
 						<Link
 							className={styles.inside_proj_cont}
-							href="/"
+							href="http://localhost:3000/pages/curioushumans"
 							target="_blank"
 						>
 							<Image
@@ -52,18 +52,20 @@ export default function SubHero() {
 						</div>
 					</Link>
 					<Link
-						href="/"
+						href="http://localhost:3000/pages/littlelemon"
 						target="_blank"
 						className={`${styles.proj_sm_cont}`}
 					>
 						<div className={styles.inside_proj_cont}>
 							<Image
-								src={ChatApp}
+								src={LitteLemon}
 								alt="curious humans project"
 								className={styles.images_cont}
 							/>
-							<h4>Chat App </h4>
-							<p>Freelance fullstack web application</p>
+							<h4>Little Lemon </h4>
+							<p>
+								Capstone project for the Meta Front-end Developer Certificate
+							</p>
 						</div>
 					</Link>
 					<Link
