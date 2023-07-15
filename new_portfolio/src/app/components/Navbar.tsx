@@ -7,13 +7,13 @@ import { useState, useEffect, useRef } from "react";
 import StarsContainer from "../page";
 import galaga from "public/galaga.png";
 
+import { HiMenuAlt2 } from "react-icons/hi";
+
 export default function Navbar({}) {
 	const [isOpen, setIsOpen] = useState(false);
 	let starsContainer = StarsContainer;
-	console.log(starsContainer);
 	const handleClick = () => {
 		setIsOpen(!isOpen);
-		console.log(isOpen);
 	};
 	const navbarRef = useRef<HTMLDivElement>(null);
 	const shotRef = useRef("shot");
@@ -21,10 +21,8 @@ export default function Navbar({}) {
 	useEffect(() => {
 		if (navbarRef && navbarRef.current) {
 			navbarRef.current.addEventListener("click", (e) => {
-				console.log(e);
 				let x = e.pageX;
 				let y = e.pageY;
-				console.log(x, y);
 				let shot = document.createElement("div");
 				navbarRef.current?.appendChild(shot);
 				shot.className = `${styles.shot}`;
@@ -33,10 +31,8 @@ export default function Navbar({}) {
 			});
 		}
 		navbarRef.current?.removeEventListener("click", (e) => {
-			console.log(e);
 			let x = e.pageX;
 			let y = e.pageY;
-			console.log(x, y);
 			let shot = document.createElement("div");
 			navbarRef.current?.appendChild(shot);
 			shot.className = `${styles.shot}`;
@@ -46,7 +42,7 @@ export default function Navbar({}) {
 	}, []);
 
 	return (
-		<div
+		<main
 			ref={navbarRef}
 			className={styles.navbar}
 			id="navbar"
@@ -54,7 +50,7 @@ export default function Navbar({}) {
 			<h1>
 				<span>Kin</span> Cunico
 			</h1>
-			<ul className={styles.right_nav}>
+			<nav className={styles.right_nav}>
 				<div className={styles.wrapper}>
 					<div className={styles.link_wrapper}>
 						<Link
@@ -66,20 +62,12 @@ export default function Navbar({}) {
 							HOME
 						</Link>
 						<Link
-							href="/pages/projects"
+							href="/pages/index/#vitrine"
 							className={styles.link}
 							onClick={handleClick}
 							id="1"
 						>
-							PROJECTS
-						</Link>
-						<Link
-							href="/pages/about"
-							className={styles.link}
-							onClick={handleClick}
-							id="2"
-						>
-							ABOUT
+							VITRINE
 						</Link>
 						<Link
 							href="/pages/contact"
@@ -116,7 +104,7 @@ export default function Navbar({}) {
 						<div className={styles.stars15}></div>
 					</div>
 				</div>
-			</ul>
-		</div>
+			</nav>
+		</main>
 	);
 }

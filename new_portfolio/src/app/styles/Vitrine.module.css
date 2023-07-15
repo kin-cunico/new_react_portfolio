@@ -9,6 +9,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .main > a {
@@ -18,9 +20,9 @@
 	scroll-behavior: smooth;
 	padding: 20px 20px;
 	transition: 0.5s;
-	box-shadow: 0px 0px 5px 1px white;
 	overflow: hidden;
 	border-radius: 20px;
+	cursor: pointer;
 }
 
 .main a:hover {
@@ -33,7 +35,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	min-height: 100vh;
+	height: 100vh;
 	background: transparent;
 	gap: 10px;
 }
@@ -164,4 +166,34 @@
 	100% {
 		--gradient-angle: 360deg;
 	}
+}
+
+.content {
+	display: flex;
+	gap: 10px;
+}
+
+.content h4 {
+	color: orangered;
+}
+
+.content span {
+	color: white;
+}
+
+.seeLiveButton {
+	transition: 1s;
+	height: 40px;
+	width: 100px;
+	cursor: pointer;
+	background: #00bfff;
+	border-radius: 8px;
+	outline: none;
+	border: none;
+}
+
+.seeLiveButton:hover {
+	transition: 1s;
+	background: #006182;
+	color: white;
 }

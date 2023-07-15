@@ -27,10 +27,12 @@ export default function MainHero() {
 
 				<div className={styles.heroText}>
 					<h1>
-						<span>{`< `}</span>
-						{`React`}
-						<span>{` / >`}</span>
-						{` Web Developer`}
+						<a id="#about">
+							<span>{`< `}</span>
+							{`Fullstack`}
+							<span>{` / >`}</span>
+							{` Web Developer`}
+						</a>
 					</h1>
 					<div className={styles.IconList}>
 						<a
@@ -46,10 +48,10 @@ export default function MainHero() {
 							<FaLinkedin className={`${styles.Icon}`} />
 						</a>
 					</div>
-					<p>
-						My name is Kin. I am a fullstack developer focused on React based
-						applications.
-					</p>
+					<h5>
+						My name is <span>Kin</span>. I am a fullstack developer focused on
+						React based applications.
+					</h5>
 					<div className={styles.tech_cont}>
 						<h4>My tech stack:</h4>
 						<div className={styles.techs}>
