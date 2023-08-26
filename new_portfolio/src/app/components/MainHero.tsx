@@ -5,13 +5,9 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import {
 	SiJavascript,
 	SiTypescript,
-	SiPostgresql,
 	SiGraphql,
-	SiPython,
-	SiRedux,
 	SiReact,
 	SiTailwindcss,
-	SiMongodb,
 } from "react-icons/si";
 
 export default function MainHero() {
@@ -29,9 +25,9 @@ export default function MainHero() {
 					<h1>
 						<a id="#about">
 							<span>{`< `}</span>
-							{`Fullstack`}
+							{`Web`}
 							<span>{` / >`}</span>
-							{` Web Developer`}
+							{`  Developer`}
 						</a>
 					</h1>
 					<div className={styles.IconList}>
@@ -49,8 +45,8 @@ export default function MainHero() {
 						</a>
 					</div>
 					<h5>
-						My name is <span>Kin</span>. I am a fullstack developer focused on
-						React based applications.
+						My name is <span>Kin</span>. I am a web developer focused on React
+						based applications.
 					</h5>
 					<div className={styles.tech_cont}>
 						<h4>My tech stack:</h4>
@@ -76,13 +72,7 @@ export default function MainHero() {
 								/>
 								<label htmlFor="ts">Typescript</label>
 							</div>
-							<div className={styles.iconBox}>
-								<SiRedux
-									name="redux"
-									className={` ${styles.Icon} ${styles.redux} `}
-								/>
-								<label htmlFor="redux">Redux</label>
-							</div>
+
 							<div className={styles.iconBox}>
 								<SiTailwindcss
 									className={`${styles.Icon} ${styles.tailwind}`}
@@ -90,33 +80,13 @@ export default function MainHero() {
 								/>
 								<label htmlFor="tailwind">TailwindCSS</label>
 							</div>
-							<div className={styles.iconBox}>
-								<SiPostgresql
-									name="postgres"
-									className={`${styles.Icon} ${styles.postgres}`}
-								/>
-								<label htmlFor="postgress">PostgreSQL</label>
-							</div>
+
 							<div className={styles.iconBox}>
 								<SiGraphql
 									className={`${styles.Icon} ${styles.graphql}`}
 									name="GraphQL"
 								/>
 								<label htmlFor="GraphQL">GraphQL</label>
-							</div>
-							<div className={styles.iconBox}>
-								<SiMongodb
-									name="mongodb"
-									className={`${styles.Icon} ${styles.mongodb}`}
-								/>
-								<label htmlFor="mongodb">MongoDB</label>
-							</div>
-							<div className={styles.iconBox}>
-								<SiPython
-									name="python"
-									className={`${styles.Icon} ${styles.python}`}
-								/>
-								<label htmlFor="python">Python</label>
 							</div>
 						</div>
 					</div>
